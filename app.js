@@ -1006,3 +1006,240 @@
 
 // let ans = Math.min.apply(Math, arr);
 // console.log(ans);
+
+
+//Interview Question
+
+
+
+
+// for (let i = 0; i < 6; i++) {
+//     setTimeout(() => {
+//         console.log(i);
+//     }, i * 1000)
+// }
+
+
+// var a = 10
+// function x() {
+//     function y() {
+//         console.log(a);
+//     }
+//     y()
+// }
+// x()
+
+
+// function x() {
+//     var a = 7;
+//     function y() {
+//         console.log(a);
+//     }
+//     y();
+// }
+// x();
+
+
+
+
+// for (let i = 0; i < 6; i++) {
+//     setTimeout(() => {
+//         console.log(i);
+//     }, i * 1000)
+// }
+
+
+// var a = 10
+// function x() {
+//     function y() {
+//         console.log(a);
+//     }
+//     y()
+// }
+// x()
+
+
+// function x() {
+//     var a = 7;
+//     function y() {
+//         console.log(a);
+//     }
+//     y();
+// }
+// x();
+
+// function add() {
+//     let sum = 0;
+//     for (let arg of arguments) {
+//         sum += arg
+//     }
+//     return sum;
+// }
+
+// console.log(add(1, 2, 3, 4));
+
+// for (var i = 1; i < 5; i++) {
+//     (function (i) {
+//         setTimeout(function () {
+//             console.log(i);
+//         }, 1000)
+//     })(i);
+// }
+
+
+// var a = 10
+// function x() {
+//     function y() {
+//         console.log(a);
+//     }
+//     y()
+// }
+// x()
+
+
+// function x(){
+//     console.log(1);
+// }
+// x();
+
+// function y() {
+//     setTimeout(() => {
+//         console.log(2)
+//     }, 4000);
+// }
+// y();
+
+// function a() {
+//     setTimeout(() => {
+//         console.log(5)
+//     }, 0);
+// }
+// a();
+
+// function z(){
+//     console.log(3);
+// }
+// z();
+
+// console.log(4);
+
+//closers
+
+
+// function x(){
+//     let a = 10;
+//     function y() {
+//         console.log(a);
+//     }
+//     y();
+// }
+
+// x();
+
+
+//currying
+
+
+// function a(x) {
+//     return function(y) {
+//         return function(z) {
+//             return x + y + z;
+//         }
+//     }
+// }
+// let ans = a(2);
+// let ans2 = ans(2);
+// let b = ans2(2);
+
+// console.log(b);
+
+
+// let ans = a(2)(3)(4);
+// console.log(ans);
+
+
+
+
+
+// let arr = [1,2,3,4,5,6,7]
+
+// function add(...data) {
+//     arr.push(...data)
+// }
+// add(2,3,4,5)
+// document.write(arr);
+
+//Destructuring
+
+// let arr = [1, 2, 3, 4, 5]
+// if i need to get the first number of array in to a new veriable called x then what i need?
+
+// let [x] = arr;
+// console.log(x);
+
+
+// let arr = [1, 2, 3, 4, 5]
+// // let arr = 2;
+// let a = Math.floor(arr);
+// console.log(a);
+
+// fetch("https://dummy.restapiexample.com/api/v1/employee/1", (err, data) => {
+//     if (err) {
+//         console.log("Error: ", err);
+//         return;
+//     }
+//     console.log("Data:", data);
+// })
+
+
+
+// Generate random Number
+
+
+
+// function xyz() {
+// return Math.floor(Math.random() * 10)
+// }
+
+// let x = Math.floor(Math.random() * 10);
+// console.log(x);
+
+// let x = Math.floor(Math.random() * (30 - 20)) + 20;
+// console.log(x);
+
+// function xyz (max, min){
+//     let a = Math.floor(Math.random() * (max - min)) + min ;
+//     return a;
+// }
+// let x = xyz(20, 10);
+// console.log(x);
+
+//generate otp with Math.random
+
+// let xyz = () => {
+//     let otp = "";
+//     for(let i=0;i<6;i++){
+//         otp += Math.floor(Math.random() * 10);
+//     }
+//     return Number(otp);
+// }
+// let ans = xyz();
+// document.body.innerHTML = ans;
+
+
+
+// JavaScript Date Object
+
+// let a = new Date();
+// console.log(a);
+
+// console.log(a.getFullYear());
+// console.log(a.getDay());
+// console.log(a.getMonth());
+
+// a.setFullYear(2021);
+// console.log(a);
+
+// a.setDate(a.getDate() + 15);
+// console.log(a);
+
