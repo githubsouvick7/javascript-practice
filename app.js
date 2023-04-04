@@ -219,3 +219,58 @@
 //     }
 // })
 // console.log(a);
+
+
+// ===========Closures in js============
+
+
+// var sum = function(a){
+//     return function(b){
+//         return function(c){
+//             return a+b+c
+//         }
+//     }
+// }
+// var first = sum(2);
+// var second = first(3);
+// console.log(second(2));
+
+
+
+// Closure
+// function a() {
+//     var a = 10;
+//     function xyz() {
+//         console.log(a);
+//     }
+//     xyz();
+// }
+
+// a();
+
+// function x() {
+//     var a = 7;
+//     function y() {
+//         console.log(a);
+//     }
+//     y();
+// }
+// x();
+
+
+//closure & lexicial scope;
+
+// var a = 10;
+// var b = 20;
+// var c = 30;
+
+// function x() {
+//     function y() {
+//         function z() {
+//             console.log(a, b, c);
+//         }
+//         z();
+//     }
+//     y();
+// }
+// x();
