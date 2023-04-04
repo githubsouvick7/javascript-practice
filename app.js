@@ -1902,3 +1902,97 @@
 
 
 
+
+
+// const options = {
+//     method: 'GET',
+//     headers: {
+//         'X-RapidAPI-Key': '51143eed46msh0471d70e0d91946p161d1djsnc1e88944c2f5',
+//         'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
+//     }
+// };
+
+// fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Seattle', options)
+//     .then(response => response.json())
+//     .then(response => {
+//         console.log(response)
+//     }).catch(err => console.error(err));
+
+
+// let p = fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Seattle');
+
+// function getData(){
+//     p.then((value) => {
+//         console.log(value.status);
+//     }).then((value) => {
+//         console.log(value)
+//     })
+// }
+// getData();
+
+
+// let p = fetch("https://www.omdbapi.com/?i=tt3896198&apikey=92839772&s=avengers")
+
+// p.then((value) => {
+//     return value.json();
+// }).then((value) => {
+//     console.log(value);
+// })
+
+// fetch('https://www.omdbapi.com/?i=tt3896198&apikey=92839772&s=avengers')
+//     .then(response => response.json())
+//     .then(data => console.log(data))
+//     .catch(error => {
+//         console.error('Error:', error);
+//     });
+
+// Fetch api
+
+// fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=seattle')
+//     .then(response => response.json())
+//     .then(data => {
+//         console.log(data);
+//     })
+//     .catch(error => {
+//         console.error('Error:', error);
+//     });
+
+
+
+// let p = fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=kharagpur');
+
+// function getData() {
+//     p.then((value) => {
+//         console.log(value.status);
+//     }).then((value) => {
+//         console.log(value)
+//     })
+// }
+// getData();
+
+//  let api = https://content.newtonschool.co/v1/pr/main/users/1
+
+
+
+// let p = fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=92839772&s=avengers`);
+
+// function getdata() {
+//     p.then(response => response.json())
+//         .then(data => {
+//             console.log(data);
+//         }).catch(err => console.error(err));
+// }
+
+// getdata();
+
+
+// let p = fetch('https://www.omdbapi.com/?i=tt3896198&apikey=92839772&s=avengers');
+
+// function getData() {
+//     p.then((value) => {
+//         console.log(value);
+//     }).then((value) => {
+//         console.log(value)
+//     })
+// }
+// getData();
