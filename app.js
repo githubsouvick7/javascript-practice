@@ -274,3 +274,135 @@
 //     y();
 // }
 // x();
+
+
+
+// ==========call=====apply=====Bind==========
+
+// ====call====
+
+// let obj = {
+//     name: "Souvick",
+//     age: 22,
+//     address: "kharagpur",
+//     details:function (){
+//         console.log(this.name);
+//     }
+// }
+// console.log(details);
+// obj.details();
+// obj.call(details)
+
+
+// let obj2 = {
+//     name: "Souvick Chakraborty",
+//     age: 21,
+//     address: "kharagpur",
+//     // details: function (){
+//     //     console.log(this.name);
+//     // }
+// }
+
+// // obj2.details();
+// obj.details.call(obj2);
+
+
+// let obj3 = {
+//     name: "Chakraborty",
+//     age: 23,
+//     address: "kharagpur",
+//     // details: function (){
+//     //     console.log(this.name);
+//     // }
+// }
+
+// obj.details.call(obj3);
+
+// function borrowing--->
+
+// let obj = {
+//         name: "Souvick",
+//         age: 22,
+//         address: "kharagpur",
+//     }
+
+// let details = function (city, state){
+//         console.log(this.name+" "+ city +","+ state);
+//     }
+// details.call(obj, "Kharagpur", "West Bengal");
+
+// let obj2 = {
+//     name: "Souvick chakraborty",
+//     age: 22,
+//     address: "kharagpur",
+// }
+// details.call(obj2,"Kharagpur", "West Bengal");
+
+// // Apply Method
+
+// details.apply(obj2,["Kharagpur", "West Bengal"]);
+
+// // Bind Method
+
+// let newFun = details.bind(obj2,"Kharagpur", "West Bengal");
+// console.log(newFun);
+// newFun()
+
+
+// This --> this keyword basically used for self referancing
+
+
+// const person1 = {
+//     name: "Souvick",
+//     age: "22",
+//     city: "Kharagpur",
+// }
+
+// const person2 = {
+//     name: "Souvick",
+//     age: "22",
+//     city: "Kharagpur",
+// }
+
+// const person3 = {
+//     name: "Souvick",
+//     age: "22",
+//     city: "Kharagpur",
+// }
+
+// const Details = function () {
+//     console.log(this.name);
+// }
+
+// Details.call(person1);
+// Details.call(person2);
+// Details.call(person3);
+
+
+// const person = {
+//     name: "Indranil",
+//     age: 22,
+//     city: "Midinipur",
+// }
+
+// const person2 = {
+//     name: "Souvick",
+//     age: 22,
+//     city: "Midinipur",
+// }
+
+// const person3 = {
+//     name: "akash",
+//     age: 22,
+//     city: "Midinipur",
+// }
+
+// let details = function (state, country) {
+//     console.log(`My name is ${this.name} ${this.age} years old from ${this.city} ${state} ${country}`);
+// }
+
+// details.apply(person, ["west Bengal", "India"]);
+
+
+
+
