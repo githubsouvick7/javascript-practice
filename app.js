@@ -50,3 +50,101 @@
 // how to access object with name-->
 // console.log(n.name);
 // console.log(n['name']);
+
+
+// =========================Array=====================
+
+//  let a = [1,2,3,4,5]
+// console.log(a);
+
+// toString
+// let b = a.toString();
+// console.log(b);
+
+
+// typeof
+// console.log(typeof b);// convert element integer to String
+
+
+// join
+// console.log(a.join(" "));// give a space in array
+
+
+// pop
+// a.pop()  // delete last value from array
+// console.log(a);
+
+
+//push
+// a.push(3); // push value in the array
+// console.log(a);
+
+
+// shift
+// let c = a.shift();  // return the first element
+// console.log(c);
+
+
+//unshift
+// let c = a.unshift(); // add element first in the array
+// console.log(c, a);// print length of array and value of array
+
+
+// Delete   --> its not a method its an operater.
+// delete(a[4]);// given number delete element in array
+// console.log(a);
+
+
+// concat --> marge array but dosenot change existing element
+// let a = [1,2,3,4,5]
+// let b = [6,7,8,9,10]
+
+// let c = a.concat(b);
+// console.log(a);
+// console.log(b);
+// console.log(c);
+
+
+// sort --> sort the array --> Inportent**
+
+// let compare = (a,b) => {
+//     return a-b;
+// }
+// let a = [4,5,3,2,6,1]
+// a.sort(compare);
+// console.log(a);
+
+// let a = ["a","x","t","c"]
+// a.sort();
+// console.log(a);
+
+
+// splice
+
+// let a = [1,2,3,4,5,6]
+//a.splice("konsi index se start hoga", "kitni index delete hoga", " kon kon index add hoga" )
+// a.splice(2,1,12)
+// console.log(a);
+
+// loopes in array
+
+// let arr = [1,2,3,4,5,6]
+// for(var i=0;i<arr.length;i++){
+//     console.log(arr[i]);
+// }
+
+//foreach loop
+
+// arr.forEach((element) => {
+//     console.log(element*element);
+// })
+
+//for of loops
+// for(let i of arr){ // print the array
+//     console.log(i);
+// }
+
+// for in loops
+// for(let i in arr){ // print keys
+//     console.log(i);
+// }
