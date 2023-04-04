@@ -739,3 +739,43 @@
 // console.log(start.mul());
 
 
+
+/////// function ///////
+
+// let a = 20;
+// let b = 24;
+// function x(){
+//     return a+b;
+// }
+// x();
+
+// console.log(typeof undefined === typeof null)
+// let a = true
+// setTimeout
+
+// let v = 10;
+// (function () {
+//     console.log(v);
+//     let v = 20;
+//     console.log(v);
+// })("");
+// console.log(v);
+
+// for(let i=0;i<3;++i){
+//     setTimeout(() => {
+//         console.log(i);
+//     },0);
+// }
+
+//anonymous function
+// let show = () => {
+//     console.log("Hii I am souvick")
+// }
+// show();
+
+// let show = function () {
+//     console.log("Hii I am souvick")
+// }
+// show();
+
+
