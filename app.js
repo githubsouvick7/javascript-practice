@@ -515,3 +515,181 @@
 
 
 
+
+//<-----------callback ---------->
+
+// const obj = [
+//     { name: "Souvick", age: 21, address: "kharagpur" },
+//     { name: "Indranil", age: 23, address: "mednipur" },
+//     { name: "Tanmoy", age: 22, address: "kharagpur" },
+//     { name: "Ram", age: 26, address: "Kolkata" }]
+
+
+// function getDatas() {
+//     setTimeout(() => {
+//         let output = "";
+//         obj.forEach((data) => {
+//             output = output + `<li>${data.name}</li>`;
+//         })
+//         document.body.innerHTML = output;
+//     }, 2000);
+// }
+// function createDatas(newData,callback) {
+//     setTimeout(() => {
+//         obj.push(newData);
+//         callback();
+//     }, 0);
+// }
+// createDatas({ name: "Ram", age: 26, address: "Kolkata" },getDatas);
+// getDatas();
+
+
+// const obj = [
+//     { name: "Souvick", age: 21, address: "kharagpur" },
+//     { name: "Indranil", age: 23, address: "mednipur" },
+//     { name: "Tanmoy", age: 22, address: "kharagpur" },
+//     { name: "Ram", age: 26, address: "Kolkata" }]
+
+
+
+// function getDatas() {
+//     setTimeout(() => {
+//         let output = "";
+//         obj.forEach((data) => {
+//             output = output +
+//                 `<ol><li>Name = ${data.name}</li>
+//             <li>Age = ${data.age}</li>
+//             <li>Address = ${data.address}</li></ol>`;
+//         })
+//         document.body.innerHTML = output;
+//     }, 2000);
+// }
+
+// function create(data) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             obj.push(data);
+//             let x = false;
+//             if (!x) {
+//                 resolve();
+//             } else {
+//                 reject("Error");
+//             }
+//         }, 2000);
+//     })
+// }
+
+// create({ name: "Sourav", age: 26, address: "Mumbai" }).then(getDatas);
+
+// async function start() {
+//     await create({ name: "Sourav", age: 26, address: "Mumbai" });
+//     getDatas();
+// }
+// start();
+
+
+
+// document.body.innerHTML = "Souvick";
+
+// let user = {
+//     name: "Souvick",
+//     age: 22,
+//     address: "kharagpur",
+//     printDetails: function () {
+//         console.log(this.name);
+//     }
+// }
+
+// user.printDetails();
+
+// let user2 = {
+//     name: "Indranil",
+//     age: 23,
+//     address: "Mednipur",
+// }
+
+// user.printDetails.call(user2);
+
+// const obj = [
+//     { name: "Souvick", age: 21, address: "kharagpur" },
+//     { name: "Indranil", age: 23, address: "mednipur" },
+//     { name: "Tanmoy", age: 22, address: "kharagpur" },
+//     { name: "Ram", age: 26, address: "Kolkata" }]
+
+// function getName() {
+//     setTimeout(() => {
+//         let output = "";
+//         obj.forEach((data) => {
+// output = output + `<li>${data.name}</li>`
+//         });
+//         document.body.innerHTML = output;
+//     }, 2000);
+// }
+// getName();
+
+// function createDatas (data){
+//     return new Promise ((res,rej) => {
+//         setTimeout(() => {
+//             obj.push(data);
+//         }, 5000);
+//         let x = true;
+//         if(x){
+//             res();
+//         } else{
+//             rej('error');
+//         }
+//     })
+// }
+
+// createDatas({name: "Akash", age: 24, address: "Kolkata" },getName);
+// getName();
+
+// createDatas({name: "Akash", age: 24, address: "Kolkata" }).then(getName);
+
+
+
+// const obj = [
+//     { name: "Souvick", age: 21, address: "kharagpur" },
+//     { name: "Indranil", age: 23, address: "mednipur" },
+//     { name: "Tanmoy", age: 22, address: "kharagpur" },
+//     { name: "Ram", age: 26, address: "Kolkata" }]
+
+
+
+// function getDatas() {
+//     setTimeout(() => {
+//         let output = "";
+//         obj.forEach((data) => {
+//             output += `<li>${data.name}</li>`
+//         });
+//         document.body.innerHTML = output;
+//     }, 5000);
+// }
+
+// function create(...data) {
+//     setTimeout(() => {
+//         obj.push(...data);
+//     }, 5000);
+// }
+
+// create({ name: "Akash", age: 24, address: "Kolkata" },{ name: "Akash", age: 24, address: "Kolkata" },{ name: "Akash", age: 24, address: "Kolkata" });
+// getDatas();
+
+
+
+// function xyz() {
+//     setTimeout(() => {
+//         console.log("Indranil");
+//     }, 0)
+// }
+
+// function abc(callback) {
+//     setTimeout(() => {
+//         console.log("dey");
+//         callback();
+//     }, 2000)
+// }
+
+// abc(xyz);
+
+
