@@ -779,3 +779,230 @@
 // show();
 
 
+
+// playing with object
+
+//what is object? ==> object can be anythings like its is an intance of class.
+
+// let person = {
+//     firstname: "Souvick",
+//     lastname: "Chakraborty"
+// };
+// console.log("My name is " + person['firstname'] + " " + person.lastname);
+
+// person.age = 22;
+
+// for(let i in person){
+//     console.log(i + " => " + person[i]);
+// }
+
+
+// let person = {
+//     firstname: "Souvick",
+//     lastname: "Chakraborty",
+//     sayHello () {
+//         console.log("Hii i am " + this.firstname + " " + this.lastname + ".I am " + about.age + " Years old");
+//     }
+// };
+
+// let about = {
+//     age: 22,
+//     lives: "Kharagpur",
+// }
+// person.sayHello();
+
+
+// let name1 = "Souvick";
+// let result = "";
+// for(let char of name1){
+//     result += char;
+// }
+// console.log(result);
+
+// let person = {
+//     name: "souvick",
+//     age: 22,
+//     get getName() {
+//         return this.name.toUpperCase();
+//     },
+//     set setName(n) {
+//         return this.name = n.toUpperCase();
+//     }
+// }
+// console.log(person.getName);
+
+
+//call bind apply
+
+// let obj = {
+//     name: "Souvick",
+//     age: "22",
+//     Address: "Kharagpur",
+//     printinfo: function () {
+//         console.log(`Hi i am ${this.name}`)
+//     }
+// }
+// obj.printinfo()
+
+// let printInfo = function(state, country) {
+//     console.log(this.name +" "+ this.age + " " + this.Address + " "+ state+" "+ country )
+// }
+
+// printInfo.call(obj, "West Bengal", "India");
+// printInfo.apply(obj, ["West Bengal", "India"]);
+
+// let obj2 = {
+//     name: "virat",
+//     age: "34",
+//     Address: "Dehli",
+// }
+
+// obj.printInfo.call(obj2)
+
+// let arr = [4,5,7,54,55,77,5,5,57,8];
+// let ans = Math.max.apply(Math, arr);
+// console.log(ans);
+
+// let arr2 = [4,5,7,54,55,77,5,5,57,8];
+// let ans2 = Math.min.apply(Math, arr);
+// console.log(ans2);
+
+// let obj = {
+//     firstname: "souvick",
+//     lastname: "chakraborty",
+//     age: "22",
+//     get getName() {
+//         return this.firstname.toUpperCase()
+//     },
+
+//     set setAge(n) {
+//         this.age = n.toUpperCase()
+//     }
+// }
+
+// obj.setAge = "indranil";
+
+// console.log(obj);
+
+// let person = {
+//     name:"souvick",
+//     age:"22",
+//     city:"kharagpur",
+//     getInfo: function (country) {
+//         console.log(`Hii I am ${this.name} ${this.age} from ${this.city} ${country}`);
+//     }
+// }
+// // console.log(person.getInfo());
+// person.getInfo("India");
+
+// let person2 = {
+//     name:"indranil",
+//     age:"25",
+//     city:"Mednipur",
+//     getInfo: function () {
+//         console.log("Hii i am" + this.name + " i am " + this.age + " Year old from " + this.city);
+//     }
+// }
+
+// person.getInfo.call(person2, "India")
+
+// setTimeout(function () {
+//     console.log("Hii I am souvick")
+// }, 5000);
+
+// object ..
+
+// let person = {
+//     name: " Indranil",
+//     age: " 22",
+//     city: " Medinpur",
+//     getInfo: function () {
+//         console.log("Hii I am" + this.name + " from" + this.city);
+//     }
+// };
+
+// function getInfo() {
+//     console.log("Hii I am" + person.name + " from" + person.city);
+// }
+
+// console.log(person);
+// getInfo();
+
+// person.getInfo();
+
+// let person = new Object;
+
+// person.name = "indranil";
+// person.age = '22';
+// person.city = "Mednipur";
+
+// console.log(person);
+
+// function getInfo() {
+//     console.log("Hii I am" + person.name + " from " + person.city);
+// }
+// getInfo();
+
+// let person = {
+//     name: " Indranil",
+//     age: " 22",
+//     city: " Medinpur",
+//     get getName() {
+//         return this.name.toUpperCase();
+//     },
+//     set setName(a){
+//         return this.name = a.toUpperCase();
+//     }
+// };
+
+// person.setName = "souvick"
+// console.log(person);
+
+
+// anonymous function
+
+// function name1() {
+//     console.log("indranil");
+// }
+// name1();
+
+
+// let name1 = function() {
+//     console.log("indranil");
+// }
+
+// setTimeout(function() {
+//     console.log("indranil");
+// }, 4000);
+
+// setTimeout(() => {
+//     console.log("indranil");
+// }, 4000);
+
+// let name1 = () => {console.log("indranil")}
+// name1();
+
+// let xyz = () => {
+//     console.log("1");
+//     setTimeout(() => {
+//         console.log("2");
+//     }, 2000)
+//     console.log("3");
+// }
+
+// xyz();
+
+// let person = {
+//     name: " Indranil",
+//     age: " 22",
+//     city: " Medinpur",
+//     getInfo: function () {
+//         console.log("Hii I am" + this.name + " from" + this.city);
+//     }
+// };
+
+
+// let arr = [1,2,3,4,5,6,7];
+
+// let ans = Math.min.apply(Math, arr);
+// console.log(ans);
