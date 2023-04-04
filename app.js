@@ -1243,3 +1243,662 @@
 // a.setDate(a.getDate() + 15);
 // console.log(a);
 
+
+//javascript ES6............
+
+
+// Array Destructuring
+
+
+// let arr = [1,2,3,4,5];
+// let [a,b,...rest] = arr;
+
+// console.log(...rest);
+
+// let obj = {
+//     name: " Indranil",
+//     age: " 22",
+//     city: " Medinpur"
+// }
+
+// let {a, b, c} = obj;
+
+// console.log(a);
+
+
+
+// const obj = {
+//     a: 1,
+//     b: 2
+// };
+// const { a, b } = obj;
+
+// console.log(a);
+
+//lexical scope
+
+// function x() {
+//     y();
+//     function y() {
+//         z();
+//         function z() {
+//             console.log(b);
+//         }
+//     }
+// }
+// let b = 7;
+// x();
+
+// when the global excution context is created lexical enviroment is also created
+// lexical means in a siquence
+// Scope chain = Scope chain connected all the lexical enviroment of the parent reference,
+
+// Lexical enviroment is Local memory and lexical enviroment of the parent memory
+
+// Closures
+// Closures is a function bind tougether with their lexical enviroment
+
+// function x() {
+//     var a = 7;
+//     function y() {
+//         console.log(a);
+//     }
+//     y();
+// }
+// x();
+
+
+// function x() {
+//     var a = 10;
+//     return function y() {
+//         return function s() {
+//             console.log(a);
+//         }
+//     }
+// }
+// let z = x();
+// console.log(z);
+// z();
+
+
+
+// const api_url = "";
+
+// async function getapi(url) {
+//     const response = await fetch(url);
+//     var data = await response.json();
+//     console.log(data)
+// }
+// getapi(api_url);
+
+
+
+
+//CallBack Function
+
+
+// setTimeout(() => {
+//     console.log("Souvick Chakraborty");
+// }, 3000);
+
+// function x(y) {
+//     console.log("I");
+//     y();
+// }
+
+// x(function y() {
+//     console.log("Am");
+// })
+
+
+// function addNumbers(a, b, callback) {
+//     const result = a + b;
+//     callback(result);
+// }
+
+// function printResult(result) {
+//     console.log(`The result is: ${result}`);
+// }
+
+// addNumbers(2, 3, printResult); // Output: The result is: 5
+
+// function add(a, b, callback) {
+//     let result = a + b;
+//     callback(result)
+// }
+
+// function printResult(result) {
+//     console.log((`The Result is ${result}`));
+// }
+// add(2, 2, printResult)
+
+// promises
+
+// const promise = 'https://www.omdbapi.com/?i=tt3896198&apikey=92839772&s=avengers';
+// const user = fetch(promise)
+// console.log(user);
+
+// function one() {
+//     return new Promise(function (resolve, reject) {
+//         setTimeout(() => {
+//             let errror = false;
+//             if (!errror) {
+//                 console.log("Resolve");
+//                 resolve();
+//             }
+//             else {
+//                 console.log('Reject')
+//                 reject();
+//             }
+//         }, 3000);
+//     })
+// }
+
+// one().then(function () {
+//     console.log('Thanks for resolving');
+// }).catch(function (error) {
+//     console.log("Sorry for rejected " + error);
+// });
+
+
+
+
+
+//Temporal Dead Zone is the period of time during which the let and const declarations cannot be accessed
+
+// console.log(a);
+// var a = 10
+
+
+// var a = 7;
+// function x() {
+//     function y() {
+//         console.log(a);
+//     }
+//     y();
+// }
+// x();
+
+
+// function x() {
+//     y();
+//     function y() {
+//         z();
+//         function z() {
+//             console.log(b);
+//         }
+//     }
+// }
+// let b = 7;
+// x();
+
+
+// var arr = [10, 20, 30];
+
+// var sum = arr.reduce((sum, elem) => {
+//     return sum + elem;
+// });
+// console.log(sum);
+
+
+// let xyz = () => {
+//     let otp = "";
+//     for (let i = 0; i < 6; i++) {
+//         otp += Math.floor(Math.random() * 10);
+//     }
+//     return Number(otp);
+// }
+// let ans = xyz();
+// console.log(ans);
+
+
+// function x() {
+//     console.log("hello");
+// }
+
+// setTimeout(x, 2000);
+
+// console.log("hello2");
+
+
+// Contest Question
+
+// let api = 'https://content.newtonschool.co/v1/pr/63b70222af4f30335b4b3b9a/buses'
+
+// async function fetchdata(url) {
+//     let response = await fetch(url)
+//     let data = await response.json();
+//     data = data.sort((a, b) => { return a.ticketPrice - b.ticketPrice })
+//     displaydata(data);
+// }
+// fetchdata(api)
+
+// function displaydata(data) {
+//     let div = document.getElementById('data-container')
+//     data.forEach((item) => {
+//         let des = document.createElement('div')
+//         des.className = 'description'
+//         let stringifydata = JSON.stringify(item)
+//         des.textContent = stringifydata
+//         div.append(des)
+//     })
+// }
+
+
+
+// second try
+
+// let api = `https://content.newtonschool.co/v1/pr/63b70222af4f30335b4b3b9a/buses`
+
+// const getData = async () => {
+//     let responce = await fetch(api);
+//     let data = await responce.json();
+
+//     data = data.sort((a, b) => {
+//         return a.ticketPrice - b.ticketPrice;
+//     })
+
+//     data.map((item) => {
+//         item = item.sort((a, b) => {
+//             return a.ticketPrice - b.ticketPrice;
+//         })
+//         document.getElementById('data-container').innerHTML = `
+//         <div class='description'>${item}</div>
+//         `
+//     })
+// }
+
+// getData();
+
+
+
+// const n = [50, 100, 125];
+
+// function addAll(total, sum) {
+//     return total + sum;
+// }
+
+// console.log(n.reduce(addAll));
+
+
+// var n = [1, 2, 3, 4, 5];
+
+// const m = n.map(n => {
+//     return (n * 5)
+// });
+
+// console.log(m)
+
+// function x() {
+//     var a = 7;
+//     function y() {
+//         console.log(a);
+//     }
+//     y();
+// }
+// x();
+
+
+// console.log(a);
+// let a = 10
+
+
+// let person = {
+//     name: "souvick",
+//     age: "22",
+//     city: "kharagpur",
+//     getInfo: function (country, secperson) {
+//         console.log(`Hii I am ${this.name} ${this.age} from ${this.city} ${country} ${secperson}`);
+//     }
+// }
+// // console.log(person.getInfo());
+// person.getInfo("India", "rajesh");
+
+// let person2 = {
+//     name: "indranil",
+//     age: "25",
+//     city: "Mednipur",
+//     // getInfo: function (country) {
+//     //     console.log("Hii i am" + this.name + " i am " + this.age + " Year old from " + this.city + country);
+//     // }
+// }
+
+// person.getInfo.call(person2, ["India", "rajesh"])
+
+
+// Reduce ->
+// let arr = [1, 2, 3, 4, 5]
+// let a = arr.reduce((value1) => {
+//     return value1 * 2;
+// })
+// console.log(a);
+
+// function getData() {
+//     console.log('start');
+
+//     fetch('https://www.omdbapi.com/?i=tt3896198&apikey=92839772&s=avengers')
+//         .then(result => result.json())
+//         .then((value) => console.log(value))
+
+//     console.log("end");
+// }
+// getData();
+
+
+// function xyz() {
+//     console.log(a, b, c);
+
+//     var a = 10;
+//     let b = 20;
+//     const c = 30;
+// }
+// xyz();
+
+// var movieData = [];
+// const api = `https://api.themoviedb.org/3/movie/upcoming?api_key=c5f51b2b883f97907e200069a85d9e93`;
+
+// const getData = async (api) => {
+//     const res = await fetch(api);
+//     const data = await res.json();
+//     console.log(data.results);
+//     display(data)
+// }
+// getData(api);
+
+
+// function display(data) {
+//     const alldata = data.results[0];
+//     const disp = document.getElementById('example');
+//     const title = alldata.title;
+//     const heading = document.createElement("p");
+//     heading.innerHTML = title;
+//     disp.appendChild(heading)
+// }
+
+
+// var x = 10;
+// function m() {
+//     console.log(x)
+//     let x = 20;
+//     console.log(x);
+// }
+// m();
+
+
+// const arr = [1, 2, 3];
+// arr[2] = 2;
+// console.log(arr);
+
+
+// let person = {
+//     name: " Indranil",
+//     age: " 22",
+//     city: " Medinpur",
+//     get getName() {
+//         return this.name.toUpperCase();
+//     },
+// };
+
+// console.log(person.getName);
+
+
+// let object = {
+//     name: "souvick chakraborty",
+//     roll: 11
+// }
+
+// let secondObject = {
+//     name: 'souvick',
+//     __proto__: object
+// }
+
+// console.log(secondObject.roll);
+
+
+
+// const callbackFunction = () => {
+//     console.log("callback");
+// }
+// setTimeout(callbackFunction, 2000);
+
+
+
+// function greeting(name) {
+//     console.log(`Hello, ${name} How are you`);
+// }
+
+// function processUserInput(callback) {
+//     const name = "souvick";
+//     callback(name);
+// }
+
+// processUserInput(greeting);
+
+
+// function add() {
+//     let sum = 0;
+//     for (let arg of arguments) {
+//         sum += arg
+//     }
+//     return sum;
+// }
+// console.log(add(2, 3, 3, 4, 5, 6));
+
+// function statement1() {
+//     setTimeout(() => {
+//         console.log("Chakraborty");
+//     }, 2000)
+// }
+
+// function statement2(callback) {
+//     setTimeout(() => {
+//         console.log("souvick");
+//         callback();
+//     }, 1000)
+// }
+
+// statement2(statement1);
+
+
+// new Promise((resolveOuter) => {
+//     resolveOuter(
+//         new Promise((resolveInner) => {
+//             setTimeout(resolveInner, 1000);
+//         }),
+//     );
+// });
+
+// let myPromise = new Promise(function (myResolve, myReject) {
+//     myResolve(); // when successful
+//     myReject();  // when error
+// });
+
+
+// myPromise.then(
+//     function (value) { /* code if successful */ },
+//     function (error) { /* code if some error */ }
+// );
+
+// let arr = [1, 2, 3, 4, 5];
+// let total = 0;
+// const res = arr.reduce((total, sums) => total + sums, 0)
+// console.log(res);
+
+
+
+// var a = 10;
+
+// xyz();
+// function xyz() {
+//     console.log(a);
+//     let b = 20;
+//     console.log(b);
+// }
+
+// const a = [1, 2, 3, 4];
+// a[0] = 7;
+// console.log(a);
+
+
+//Hosting
+
+
+// xyz();
+
+// function xyz() {
+//     var a = 10;
+//     console.log(a);
+// }
+
+
+
+
+
+// destructuring
+
+// var arr = [1, 2, 3, 4, 5];
+// let arr3 = arr[3];
+// console.log(arr3);
+
+// let a = 10;
+// let b = 20;
+// let c = 30;
+
+// let abc = { a, b, c };
+// console.log(abc);
+
+
+//Rest operater
+
+
+// let arr = [1, 2, 3, 4, 5];
+// var sum = 0;
+// function add(arr, ...rest) {
+//     console.log(arr);
+//     console.log(rest);
+// }
+
+// add(arr, 10, 20, 30, 50, 40);
+
+// let name1 = ["souvick", "rum", "sum", "jodu", "modu", "tanmoy", "indranil"]
+
+// function getName(...other) {
+//     console.log(other)
+// }
+// getName(...name1);
+
+
+//map filter reduce.
+
+// let arr = [1, 2, 3, 4, 5];
+
+// const mapResult = arr.filter((value) => {
+//     return value > 2;
+// });
+// console.log(mapResult);
+// console.log(arr);
+
+
+// const forEachResult = arr.forEach((value, index, arr) => {
+//     arr[index] = value * 2;
+// });
+
+// console.log(forEachResult);
+// console.log(arr);
+
+// let total = 0;
+
+// const reduceResult = arr.reduce((sum, total) => total + sum, 0)
+
+// console.log(reduceResult);
+// console.log(sum);
+
+
+// let arr = [1, 2, 3, 4, 5];
+// const res = arr.reduce((total, sums) => total + sums)
+// console.log(res);
+
+
+//call bind apply
+
+//callback
+
+//promise & async await
+
+
+// var x = '1996';
+// console.log(x + 4, Number(x) + 4);
+
+// const options = {
+//     method: 'GET',
+//     headers: {
+//         'X-RapidAPI-Key': '9fc72827fdmshbfef3dea6f543cbp11cdd7jsncabf165fc080',
+//         'X-RapidAPI-Host': 'covid-193.p.rapidapi.com'
+//     }
+// };
+
+// fetch('https://covid-193.p.rapidapi.com/countries', options)
+//     .then(response => response.json())
+//     .then(response => console.log(response.response))
+//     .catch(err => console.error(err));
+
+
+// const options = {
+//     method: 'GET',
+//     headers: {
+//         'X-RapidAPI-Key': '9fc72827fdmshbfef3dea6f543cbp11cdd7jsncabf165fc080',
+//         'X-RapidAPI-Host': 'corona-virus-world-and-india-data.p.rapidapi.com'
+//     }
+// };
+
+// fetch('https://corona-virus-world-and-india-data.p.rapidapi.com/api', options)
+//     .then(response => response.json())
+//     .then(response => console.log(response))
+//     .catch(err => console.error(err));
+
+
+
+
+
+
+// function one() {
+//     setTimeout(() => {
+//         console.log("kumar");
+//     }, 1000)
+
+// }
+
+// function two(callback) {
+//     setTimeout(() => {
+//         console.log("Rajesh");
+//         callback();
+//     }, 2000)
+
+// }
+
+// two(one);
+
+// let i = 8;
+// let j = 2;
+
+// if (i++ > 8 && j++ > 2) {
+//     console.log(i);
+//     console.log(j);
+// }
+
+// console.log(i + j);
+
+
+
+// let x = 0;
+// let y = 1;
+// let z = ++x && y++;
+// console.log(z);
+
+
+
+// let x = '1996';
+// console.log(x + 4 ,Number(x) + 4);
+
+
+
