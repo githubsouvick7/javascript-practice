@@ -692,4 +692,50 @@
 
 // abc(xyz);
 
+// Closures
+
+// var sum = function(a){
+//     return function(b){
+//         return function(c){
+//             return a+b+c
+//         }
+//     }
+// }
+// var first = sum(2);
+// var second = first(3);
+// console.log(second(2));
+
+// anonymous function
+// let a = function(x){
+//     console.log("Souvick" +x);
+// }
+// a(" Chakraborty");
+
+
+// closures Examples
+
+// let a = function(a){
+//     console.log(a);
+//     let b = 2;
+//     return function(c){
+//         return a+b+c;
+//     }
+// }
+// let store = a(2);
+// console.log(store(2));
+
+// let a = function(a,b,c){
+//     return {
+//         sum:function(){
+//             return a+b;
+//         },
+//         mul:function(){
+//             return a*c;
+//         }
+//     }
+// }
+// let start=a(3,4,5);
+// console.log(start.sum());
+// console.log(start.mul());
+
 
