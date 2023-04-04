@@ -406,3 +406,112 @@
 
 
 
+//Rest Operater --->
+
+// function addNumber(...other){
+//     for(let i=0;i<other.length;i++){
+//         console.log(other[i]);
+//     }
+// }
+// let res = addNumber(1,2,3,4,5,6,7);
+// console.log(res);
+
+// function addNumber(...other){
+//     return other
+// }
+// let res = addNumber(1,2,3);
+// console.log(res);
+
+
+//Spread Operater --->
+
+// let name = ["souvick", "rum", "sum", "jodu", "modu", "tanmoy", "indranil"]
+
+// function getName(...other) {
+//     console.log(other)
+// }
+// getName(...name);
+
+// getName(name);
+
+// destructuring
+
+// const obj = {
+//     name: "Souvick", age: 22, address:"kharagpur",
+// }
+// let {name} = obj;
+// console.log(name)
+
+
+
+
+//  Problem Statement
+
+// const obj = [
+//     {name: "souvick", age: 21, address: "kharagpur"},
+//     {name: "indranil", age: 23, address: "mednipur"},
+//     {name: "tanmoy", age: 22, address: "kharagpur"}]
+
+// function getDates(){
+//     setTimeout(() => {
+//         let temp = "";
+//         obj.forEach((data,index) => {
+//             temp = data.name;
+//             console.log(temp);
+//         })
+//     }, 1000);
+// }
+// getDates()
+
+
+//rest operater
+
+// let arr = [1,2,3,4,5];
+
+// function xyz(a,b) {
+//     return a * b;
+// }
+
+// let ans = xyz(2,3);
+// console.log(ans);
+
+
+
+
+// let ans = (a,b) => {
+//     return a*b;
+// }
+// console.log(ans(2,2));
+
+// function xyz(a,b) {
+//     return a * b;
+// }
+// xyz(2,3);
+
+
+
+
+
+// const obj = [
+//     {name: "souvick", age: 21, address: "kharagpur"},
+//     {name: "indranil", age: 23, address: "mednipur"},
+//     {name: "tanmoy", age: 22, address: "kharagpur"}]
+
+// obj.forEach((...x) => {
+//     // console.log(x.name);
+//     console.log(...obj);
+//     // console.log(x.age);
+// })
+// document.getElementById('display').innerHTML = ans;
+
+
+// function xyz(obj){
+//     console.log(obj.name);
+//     console.log(obj.age);
+//     console.log(obj.address);
+// }
+
+// xyz(obj)
+
+
+
