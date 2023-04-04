@@ -148,3 +148,74 @@
 // for(let i in arr){ // print keys
 //     console.log(i);
 // }
+
+
+// ======= Map ======= Filter ======= Reduce =======
+
+// Map -> its create a new array for perfroming some operation on each array element.
+
+// let arr = [1,2,3,4,5]
+// let a = arr.map((value, index) =>{
+//     console.log(value,index);
+//     return value * 5
+// })
+// console.log(arr);
+// arr.map((x) =>{
+//     console.log(x);
+// })
+
+
+//filter -> filter the array and pass the value.
+
+// let arr = [1,2,3,4,5]
+// let a = arr.filter((value) => {
+//     return value>3
+// })
+// console.log(a);
+// console.log(arr);
+
+// Reduce ->
+// let arr = [1,2,3,4]
+// let a = arr.reduce((value1) =>{
+//     return value1 * 2;
+// })
+// console.log(a);
+
+// using object
+
+// let arr2 = [
+// {name: "souvick", age: 21, address: "kharagpur"},
+// {name: "indranil", age: 23, address: "mednipur"},
+// {name: "tanmoy", age: 22, address: "kharagpur"}]
+
+// using arrow function
+// arr.forEach((value) => (console.log(value.address)));
+// arr.forEach((x) => {
+//     console.log(x.age);
+// })
+
+// using normal function
+// arr.forEach(function(value){console.log(value)});
+// arr.forEach(function(x){
+//     console.log(x.name);
+// })
+
+// const sb = arr.filter(function(value){
+//     if(value.address === "mednipur"){
+//         return true;
+//     }
+// })
+// console.log(sb);
+
+// let arr = [1,2,3,4,5,6]
+// let a = arr.filter((value)=>{
+//     return value > 3
+// })
+// console.log(a);
+
+// let a = arr2.filter((x) => {
+//     if(x.address === "kharagpur"){
+//         return true;
+//     }
+// })
+// console.log(a);
