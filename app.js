@@ -2022,14 +2022,47 @@
 
 
 
+//Memoization
+
+// Memoization --> Memoization is an optimization technique that can be used to reduce
+// time-consuming calculations by saving previous input to somthing called cache
+// and returning the result
+
+//example
+
+let sum = 0;
+const calc = (n) => {
+    for (let i = 0; i <= n; i++) {
+        sum += i;
+    }
+    return sum;
+}
+
+console.time();
+console.log(calc(10));
+console.timeEnd();
+
+const memoize = (fun) => {
+    let cache = {};
+    return function (...args) {
+        let n = args[0];
+        if (n in cache) {
+            console.log("cache");
+            return cache[n];
+        } else {
+            console.log('first time');
+            let res = fun(n);
+            cache[n] = res;
+            return res;
+        }
+    }
+}
 
 
-
-
-
-
-
-
+console.time();
+let memo = memoize(calc);
+console.log(memo(10));
+console.timeEnd();
 
 
 
