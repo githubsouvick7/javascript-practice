@@ -1292,9 +1292,7 @@
 // when the global excution context is created lexical enviroment is also created
 // lexical means in a siquence
 // Scope chain = Scope chain connected all the lexical enviroment of the parent reference,
-
 // Lexical enviroment is Local memory and lexical enviroment of the parent memory
-
 // Closures
 // Closures is a function bind tougether with their lexical enviroment
 
@@ -2030,49 +2028,351 @@
 
 //example
 
-let sum = 0;
-const calc = (n) => {
-    for (let i = 0; i <= n; i++) {
-        sum += i;
-    }
-    return sum;
-}
+// let sum = 0;
+// const calc = (n) => {
+//     for (let i = 0; i <= n; i++) {
+//         sum += i;
+//     }
+//     return sum;
+// }
 
-console.time();
-console.log(calc(10));
-console.timeEnd();
+// console.time();
+// console.log(calc(10));
+// console.timeEnd();
 
-const memoize = (fun) => {
-    let cache = {};
-    return function (...args) {
-        let n = args[0];
-        if (n in cache) {
-            console.log("cache");
-            return cache[n];
-        } else {
-            console.log('first time');
-            let res = fun(n);
-            cache[n] = res;
-            return res;
-        }
-    }
-}
-
-
-console.time();
-let memo = memoize(calc);
-console.log(memo(10));
-console.timeEnd();
+// const memoize = (fun) => {
+//     let cache = {};
+//     return function (...args) {
+//         let n = args[0];
+//         if (n in cache) {
+//             console.log("cache");
+//             return cache[n];
+//         } else {
+//             console.log('first time');
+//             let res = fun(n);
+//             cache[n] = res;
+//             return res;
+//         }
+//     }
+// }
 
 
+// console.time();
+// let memo = memoize(calc);
+// console.log(memo(10));
+// console.timeEnd();
 
 
 
+//All about Callback
+
+// setTimeout(function xyz() { console.log('zero') }, 1000);
+// console.log("one");
 
 
 
 
 
+//with addevent listener
+// function xyz() {
+//     let count = 0;
+//     document.getElementById('click').
+//         addEventListener('click', function abc() {
+//             console.log("Button Clicked !", ++count);
+//         })
+// }
+
+
+// xyz();
+
+
+
+// let x = 5;
+// console.log(x++);
+// console.log(++x);
+
+// let a = 5;
+// let b = a++;
+// let c = ++a;
+// console.log(a, b, c);
+
+
+// deep drive in forEach loop
+
+// let fruits = ['🍉', '🍈', '🍊', '🍒', '🍏', '🍎']
+
+// function apnaForEach(arr, callback) {
+//     for (let i = 0; i < arr.length; i++) {
+//         callback(arr[i]);
+//     }
+// }
+
+// function kattappa(fruit) {
+//     console.log(fruit);
+// }
+
+// apnaForEach(fruits, kattappa);
+
+
+// let a = 5;
+// let b = a++;
+// let c = ++a;
+
+// console.log(a, b, c);
+
+// // 5, 6, 5
+
+
+// let x = 5;
+// console.log(x++);
+// console.log(++x);
+
+
+// var a = null;
+// console.log(typeof a);
+// console.log(typeof undefined);
+
+// a = {
+//     name: 'souvick',
+//     age: 22
+// }
+// console.log(typeof a);
+
+// a = 20;
+
+// console.log(typeof a);
+
+
+
+// let count = 0;
+// document.getElementById('click').
+//     addEventListener('click', function abc() {
+//         console.log("Button Clicked !", count++);
+//     })
+
+// const xyz = () => {
+//     let count = 0;
+//     document.getElementById('click').
+//         addEventListener('click', function abc() {
+//             console.log("Button Clicked !", count++);
+//         })
+// }
+
+// xyz();
+
+
+// var a = 10
+// function x() {
+//     var a = 20;
+//     function y() {
+//         console.log(a);
+//         var a = 30;
+//     }
+//     y();
+// }
+// x();
+
+// console.log(a)
+// let a = 10
+
+
+// (function a() {
+//     console.log("souvick");
+// })();
+
+// const add = (...arguments) => {
+//     console.log(...arguments);
+// }
+
+// add(1, 2, 3, 4, 5, 6, 7, 8, 9);
+
+
+
+// let b = 0;
+// console.log(b);
+
+// var a = 10;
+// function x() {
+//     var a = 20;
+// }
+// x();
+// var a = 20;
+// console.log(a);
+
+
+// function foo() {
+//     var x = 1;
+//     function bar() {
+//         var y = 2;
+//         console.log(x);
+//         console.log(y);
+//     }
+//     bar();
+//     console.log(x);
+//     console.log(y);
+// }
+// foo();
+
+// console.log(arr);
+// var arr = [1, 2, 3]
+
+
+
+
+// let obj = {
+//     name: 'abc',
+//     22: 22
+// }
+
+// console.log(obj);
+
+// const c = { greeting: 'Hey!' };
+// const d = c;
+// c.greeting = 'Hello';
+// console.log(d.greeting);
+
+
+// let a = new Number(3);
+// console.log(typeof a);
+// console.log(Number(2));
+
+
+
+// let count = 0;
+// (function immediate() {
+//     if (count === 0) {
+//         let count = 1;
+//         console.log(count); // What is logged?
+//     }
+//     console.log(count); // What is logged?
+// })();
+
+
+
+
+
+
+// function createIncrement() {
+//     let count = 0;
+//     function increment() {
+//         count++;
+//     }
+//     let message = `Count is ${count}`;
+//     function log() {
+//         console.log(message);
+//     }
+//     return [increment, log];
+// }
+
+// const [increment, log] = createIncrement();
+
+// increment();
+// increment();
+// increment();
+// log();
+
+
+
+
+
+
+// function xyz() {
+//     return function abc() {
+//         let count = 0;
+//         count++;
+//         console.log(count);
+//     }
+// }
+
+// const abc = xyz();
+// const res = abc();
+
+
+
+
+// function x() {
+//     let count = 0;
+//     function y() {
+//         count++;
+//         console.log(count);
+//     }
+//     y();
+//     y();
+//     y();
+// }
+
+// x();
+
+
+// var variable = 10;
+// (() => {
+//     console.log(variable);
+//     variable = 20;
+//     console.log(variable);
+// })();
+// var variable = 30;
+// console.log(variable);
+
+
+// Hosting
+// var a = 10;
+// function x() {
+//     a = 20;
+//     console.log(a);
+// }
+// x();
+
+
+// Closures
+
+
+// function outer() {
+//     var a = 10;
+//     return function inner() {
+//         console.log(a);
+//     }
+// }
+
+// outer()();
+
+
+
+
+//normal fnc vs arrow fnc
+
+
+// let obj = {
+//     name: "kjj",
+//     age: 22,
+// }
+// obj.getName();
+
+
+// let getName = () => {
+//     let obj2 = {
+//         name: 'Souvick',
+//     }
+//     console.log(obj2.name);
+// }
+
+// getName();
+
+// let obj = {
+//     name: "Souvick",
+//     age: 22
+// }
+
+// console.log(this.obj);
+
+
+
+// Callback
+
+// const abc = () => {
+//     console.log("abc !");
+// }
+
+// setTimeout(abc, 1000)
 
 
 
