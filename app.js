@@ -1,6 +1,6 @@
 // console.log("hello world")
 
-//there are 6 premetive data type
+// there are 6 premetive data type
 // 1: undefined;
 // 2: Number;
 // 3: String;
@@ -75,7 +75,7 @@
 // console.log(a);
 
 
-//push
+// push
 // a.push(3); // push value in the array
 // console.log(a);
 
@@ -85,7 +85,7 @@
 // console.log(c);
 
 
-//unshift
+// unshift
 // let c = a.unshift(); // add element first in the array
 // console.log(c, a);// print length of array and value of array
 
@@ -122,7 +122,7 @@
 // splice
 
 // let a = [1,2,3,4,5,6]
-//a.splice("konsi index se start hoga", "kitni index delete hoga", " kon kon index add hoga" )
+// a.splice("konsi index se start hoga", "kitni index delete hoga", " kon kon index add hoga" )
 // a.splice(2,1,12)
 // console.log(a);
 
@@ -133,13 +133,13 @@
 //     console.log(arr[i]);
 // }
 
-//foreach loop
+// foreach loop
 
 // arr.forEach((element) => {
 //     console.log(element*element);
 // })
 
-//for of loops
+// for of loops
 // for(let i of arr){ // print the array
 //     console.log(i);
 // }
@@ -165,7 +165,7 @@
 // })
 
 
-//filter -> filter the array and pass the value.
+// filter -> filter the array and pass the value.
 
 // let arr = [1,2,3,4,5]
 // let a = arr.filter((value) => {
@@ -258,7 +258,7 @@
 // x();
 
 
-//closure & lexicial scope;
+// closure & lexicial scope;
 
 // var a = 10;
 // var b = 20;
@@ -406,7 +406,7 @@
 
 
 
-//Rest Operater --->
+// Rest Operater --->
 
 // function addNumber(...other){
 //     for(let i=0;i<other.length;i++){
@@ -423,7 +423,7 @@
 // console.log(res);
 
 
-//Spread Operater --->
+// Spread Operater --->
 
 // let name = ["souvick", "rum", "sum", "jodu", "modu", "tanmoy", "indranil"]
 
@@ -464,7 +464,7 @@
 // getDates()
 
 
-//rest operater
+// rest operater
 
 // let arr = [1,2,3,4,5];
 
@@ -516,7 +516,7 @@
 
 
 
-//<-----------callback ---------->
+// <-----------callback ---------->
 
 // const obj = [
 //     { name: "Souvick", age: 21, address: "kharagpur" },
@@ -740,7 +740,7 @@
 
 
 
-/////// function ///////
+// ///// function ///////
 
 // let a = 20;
 // let b = 24;
@@ -767,7 +767,7 @@
 //     },0);
 // }
 
-//anonymous function
+// anonymous function
 // let show = () => {
 //     console.log("Hii I am souvick")
 // }
@@ -782,7 +782,7 @@
 
 // playing with object
 
-//what is object? ==> object can be anythings like its is an intance of class.
+// what is object? ==> object can be anythings like its is an intance of class.
 
 // let person = {
 //     firstname: "Souvick",
@@ -832,7 +832,7 @@
 // console.log(person.getName);
 
 
-//call bind apply
+// call bind apply
 
 // let obj = {
 //     name: "Souvick",
@@ -1008,7 +1008,7 @@
 // console.log(ans);
 
 
-//Interview Question
+// Interview Question
 
 
 
@@ -1123,7 +1123,7 @@
 
 // console.log(4);
 
-//closers
+// closers
 
 
 // function x(){
@@ -1137,7 +1137,7 @@
 // x();
 
 
-//currying
+// currying
 
 
 // function a(x) {
@@ -1169,7 +1169,7 @@
 // add(2,3,4,5)
 // document.write(arr);
 
-//Destructuring
+// Destructuring
 
 // let arr = [1, 2, 3, 4, 5]
 // if i need to get the first number of array in to a new veriable called x then what i need?
@@ -1214,7 +1214,7 @@
 // let x = xyz(20, 10);
 // console.log(x);
 
-//generate otp with Math.random
+// generate otp with Math.random
 
 // let xyz = () => {
 //     let otp = "";
@@ -1244,7 +1244,7 @@
 // console.log(a);
 
 
-//javascript ES6............
+// javascript ES6............
 
 
 // Array Destructuring
@@ -1275,7 +1275,7 @@
 
 // console.log(a);
 
-//lexical scope
+// lexical scope
 
 // function x() {
 //     y();
@@ -1332,7 +1332,7 @@
 
 
 
-//CallBack Function
+// CallBack Function
 
 
 // setTimeout(() => {
@@ -1402,7 +1402,7 @@
 
 
 
-//Temporal Dead Zone is the period of time during which the let and const declarations cannot be accessed
+// Temporal Dead Zone is the period of time during which the let and const declarations cannot be accessed
 
 // console.log(a);
 // var a = 10
@@ -1738,7 +1738,7 @@
 // console.log(a);
 
 
-//Hosting
+// Hosting
 
 
 // xyz();
@@ -1766,7 +1766,7 @@
 // console.log(abc);
 
 
-//Rest operater
+// Rest operater
 
 
 // let arr = [1, 2, 3, 4, 5];
@@ -1786,7 +1786,7 @@
 // getName(...name1);
 
 
-//map filter reduce.
+// map filter reduce.
 
 // let arr = [1, 2, 3, 4, 5];
 
@@ -1817,11 +1817,11 @@
 // console.log(res);
 
 
-//call bind apply
+// call bind apply
 
-//callback
+// callback
 
-//promise & async await
+// promise & async await
 
 
 // var x = '1996';
@@ -2020,13 +2020,13 @@
 
 
 
-//Memoization
+// Memoization
 
 // Memoization --> Memoization is an optimization technique that can be used to reduce
 // time-consuming calculations by saving previous input to somthing called cache
 // and returning the result
 
-//example
+// example
 
 // let sum = 0;
 // const calc = (n) => {
@@ -2064,7 +2064,7 @@
 
 
 
-//All about Callback
+// All about Callback
 
 // setTimeout(function xyz() { console.log('zero') }, 1000);
 // console.log("one");
@@ -2073,7 +2073,7 @@
 
 
 
-//with addevent listener
+// with addevent listener
 // function xyz() {
 //     let count = 0;
 //     document.getElementById('click').
@@ -2191,13 +2191,7 @@
 // let b = 0;
 // console.log(b);
 
-// var a = 10;
-// function x() {
-//     var a = 20;
-// }
-// x();
-// var a = 20;
-// console.log(a);
+
 
 
 // function foo() {
@@ -2338,7 +2332,7 @@
 
 
 
-//normal fnc vs arrow fnc
+// normal fnc vs arrow fnc
 
 
 // let obj = {
@@ -2375,9 +2369,298 @@
 // setTimeout(abc, 1000)
 
 
+// function a() {
+//     setTimeout(() => {
+//         console.log("one");
+//     }, 2000)
+// }
+
+// function b(callback) {
+//     setTimeout(() => {
+//         console.log('Two');
+//         callback();
+//     }, 3000)
+// }
+
+// b(a);
 
 
 
+// var variable = 10;
+// (() => {
+//     console.log(variable);
+//     variable = 20;
+//     console.log(variable);
+// })();
+// var variable = 30;
+// console.log(variable);
+
+
+// var a = 10;
+// function x() {
+//     console.log(a);
+//     var a = 20;
+// }
+// x();
+
+
+
+
+// let x = 50;
+
+// function a() {
+//     console.log(x);
+//     var y = 50;
+// }
+// a();
+
+// var x = 50;
+// var m = {
+//     fun: function () { console.log(this.x) },
+//     fun1: () => { console.log(this.x) },
+//     x: 20
+// }
+// m.fun()
+// m.fun1()
+// var ans = m.fun;
+// var ofn1 = m.fun1;
+// ans();
+// ofn1();
+
+
+// var a = () => {
+//     console.log("a");
+// }
+
+
+
+// var name = 'Souvick'
+
+// var obj = {
+//     function1: function () { console.log(this.name) },
+//     function2: () => { console.log(this.name) },
+//     name: "Akash",
+// }
+
+// obj.function1();
+// obj.function2();
+
+
+
+// let num = [1, 2, 3, 4, 5];
+// console.log(num.length);
+// delete num[0];
+// console.log(num.length);
+
+// for (var i = 1; i < 5; i++) {
+//     if (i == 3) continue;
+//     console.log(i);
+// }
+
+// const numbers = [1, 2, 3];
+// numbers[10] = 11;
+// console.log(numbers);
+
+
+// function abc() {
+//     console.log(a);
+//     let a = 10;
+// }
+
+// abc();
+
+
+
+// const nums = [1, 2, 3, 4, 5];
+
+// const ans = nums.reduce((acc, curr) => {
+//     return acc + curr;
+// }, 0)
+
+// console.log(ans);
+
+
+
+// const arr = [1, 2, 3, 4, 5];
+// arr[5] = 20;
+// console.log(arr);
+
+
+// const obj = { a: 1 };
+// const copy = Object.assign(obj);
+// console.log(copy);
+
+
+
+
+
+
+// const obj = {
+//     name: " abc",
+//     getName: function (city) {
+//         console.log(this.name + city);
+//     }
+// }
+
+// const obj2 = {
+//     name: "2abc",
+// }
+
+// const res = obj.getName.bind(obj2, "kharagpur");
+
+
+
+
+// abc();
+
+// function abc() {
+//     console.log("abc");
+// }
+
+
+
+
+
+//this interview question
+
+
+// var name = "souvick"
+
+// const obj = {
+//     name: " abc",
+//     getName: function () {
+//         console.log(this.name);
+//     },
+//     getName2: () => {
+//         console.log(this.name);
+//     },
+// }
+
+// obj.getName();
+// obj.getName2();
+
+
+// console.log(a);
+// a();
+// var a = () => {
+//     console.log("abc");
+// }
+
+// const user = {
+//     name: "Souvick",
+//     getName() {
+//         console.log(this.name);
+//     }
+// }
+
+// setTimeout(function () {
+//     user.getName();
+// }, 1000)
+
+
+
+// var length = 4;
+
+// function callback() {
+//     console.log(this.length);
+// }
+
+// const obj = {
+//     length: 10,
+//     abc(fun) {
+//         fun();
+//     },
+// }
+
+// obj.abc(callback);
+
+
+
+// Most Importent
+// var length = 20;
+
+// function callback() {
+//     console.log(this.length);
+// }
+
+// const obj = {
+//     length: 10,
+//     abc() {
+//         arguments[0]();
+//     },
+// }
+
+// obj.abc(callback, 1, 2, 3);
+
+
+
+
+// const fruits = ['Grapes', 'Apple', 'Mango'];
+// fruits.length = 0;
+// console.log(fruits[0]);
+
+
+// function a(x) {
+//     return function b() {
+//         console.log(x);
+//     }
+// }
+
+// a(10)();
+
+
+
+// function p() {
+//     let name = "Souvick"
+// }
+
+// let a = new p();
+// console.log(a.name);
+
+
+// let count = 0;
+
+// setInterval(function () {
+//     count++;
+//     console.log(count);
+// }, 1000);
+
+
+// var a = 10;
+
+// function b() {
+//     console.log(a);
+//     function y() {
+//         console.log("abc");
+//     }
+//     y();
+// }
+// b();
+
+
+// Callbacks
+
+
+// let a = function () {
+//     console.log("abc");
+// }
+
+// setTimeout(a, 1000);
+
+// function a() {
+//     setTimeout(() => {
+//         console.log("a");
+//     }, 2000)
+// }
+
+// function b(callback) {
+//     setTimeout(() => {
+//         console.log("b");
+//         callback();
+//     }, 3000)
+// }
+
+// b(a);
 
 
 
