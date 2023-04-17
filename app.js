@@ -2664,6 +2664,91 @@
 
 
 
+// let c = 10;
+// console.log(c)
+
+
+// var a = 10;
+// function x() {
+//     console.log(a);
+//     let a = 20;
+// }
+
+// x();
+
+// var a = 10;
+// const obj = {
+//     func1: function () {
+//         console.log(this.a);
+//     },
+//     func2: () => {
+//         console.log(this.a);
+//     },
+//     a: 20
+// }
+
+// obj.func1();
+// obj.func2();
+
+
+
+
+
+
+// deep drive into promise 
+
+
+const cart = ['shirt', 'shoes', 'cap', 'glass'];
+createOrder(cart)
+    .then((id) => {
+        console.log(id)
+        return id
+    })
+    .then((orderid) => {
+        return proceedTopaymment(orderid)
+    })
+    .then((payInfo) => {
+        console.log(payInfo);
+    })
+    .catch((error) => {
+        console.log(error.message)
+    })
+
+function cartId(cart) {
+    return true;
+}
+
+function createOrder(cart) {
+    const pr = new Promise(function (resolve, rejected) {
+
+        if (!cartId(cart)) {
+            const error = new Error("cart is not valid !");
+            rejected(error);
+        }
+
+        const orderid = "12345"
+        if (orderid) {
+            setTimeout(function () {
+                resolve(orderid)
+            }, 2000)
+        }
+
+    })
+
+    return pr;
+}
+
+function proceedTopaymment(orderid) {
+    const payment = new Promise(function (resolve, reject) {
+
+        if (orderid) {
+            resolve("Payment Successfully");
+        }
+    })
+
+    return payment;
+}
+
 
 
 
