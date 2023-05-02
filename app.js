@@ -2695,60 +2695,164 @@
 
 
 
-// deep drive into promise 
+// deep drive into promise
 
 
-const cart = ['shirt', 'shoes', 'cap', 'glass'];
-createOrder(cart)
-    .then((id) => {
-        console.log(id)
-        return id
-    })
-    .then((orderid) => {
-        return proceedTopaymment(orderid)
-    })
-    .then((payInfo) => {
-        console.log(payInfo);
-    })
-    .catch((error) => {
-        console.log(error.message)
-    })
+// const cart = ['shirt', 'shoes', 'cap', 'glass'];
+// createOrder(cart)
+//     .then((id) => {
+//         console.log(id)
+//         return id
+//     })
+//     .then((orderid) => {
+//         return proceedTopaymment(orderid)
+//     })
+//     .then((payInfo) => {
+//         console.log(payInfo);
+//     })
+//     .catch((error) => {
+//         console.log(error.message)
+//     })
 
-function cartId(cart) {
-    return true;
-}
+// function cartId(cart) {
+//     return true;
+// }
 
-function createOrder(cart) {
-    const pr = new Promise(function (resolve, rejected) {
+// function createOrder(cart) {
+//     const pr = new Promise(function (resolve, rejected) {
 
-        if (!cartId(cart)) {
-            const error = new Error("cart is not valid !");
-            rejected(error);
-        }
+//         if (!cartId(cart)) {
+//             const error = new Error("cart is not valid !");
+//             rejected(error);
+//         }
 
-        const orderid = "12345"
-        if (orderid) {
-            setTimeout(function () {
-                resolve(orderid)
-            }, 2000)
-        }
+//         const orderid = "12345"
+//         if (orderid) {
+//             setTimeout(function () {
+//                 resolve(orderid)
+//             }, 2000)
+//         }
 
-    })
+//     })
 
-    return pr;
-}
+//     return pr;
+// }
 
-function proceedTopaymment(orderid) {
-    const payment = new Promise(function (resolve, reject) {
+// function proceedTopaymment(orderid) {
+//     const payment = new Promise(function (resolve, reject) {
 
-        if (orderid) {
-            resolve("Payment Successfully");
-        }
-    })
+//         if (orderid) {
+//             resolve("Payment Successfully");
+//         }
+//     })
 
-    return payment;
-}
+//     return payment;
+// }
 
 
+// var obj = {
+//     name: 'souvick',
+//     address: {
+//         flat: 50,
+//         city: 'kolkata',
+//     }
+// }
+
+// let objCopy = obj.address;
+// objCopy.flat = 100;
+// console.log(obj.address.flat);
+
+
+
+// let vs var vs const
+
+// var a = 10;
+// function b() {
+//     console.log(a);
+//     var a = 20;
+// }
+// b();
+
+
+//lexical scope
+
+// function inner() {
+//     function b() {
+//         function c() {
+//         }
+//         c()
+//     }
+//     b();
+// }
+
+
+// closures
+
+// function inner() {
+//     let a = 10;
+//     return function () {
+//         console.log(a);
+//     }
+// }
+// inner()();
+
+
+// function counter() {
+//     let count = 0;
+//     document.getElementById("click").addEventListener("click", function (e) {
+//         count++;
+//         console.log(count);
+//     })
+// }
+// counter();
+
+
+
+// callbacks
+
+// function payment() {
+//     setTimeout(() => {
+//         console.log("payment");
+//     }, 2000)
+// }
+
+// function cart(payment) {
+//     setTimeout(() => {
+//         console.log("add to cart");
+//         payment();
+//     }, 3000)
+// }
+
+// cart(payment);
+
+// let obj = {
+//     name: 'souvick',
+//     address: {
+//         flat: 50,
+//         city: 'kolkata',
+//     }
+// }
+
+// let objCopy = { ...obj };
+
+// objCopy.name = "rejash";
+// objCopy.address.flat = 100;
+// console.log(obj.name);
+// console.log(obj.address.flat);
+
+
+
+// normal functiom vs arrow function
+// a();
+
+// var a = () => {
+//     console.log("a");
+// }
+
+// a();
+
+// function a() {
+//     console.log("a");
+// }
 
 
